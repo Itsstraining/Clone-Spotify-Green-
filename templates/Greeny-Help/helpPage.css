@@ -38,13 +38,14 @@ body {
 
 
 
-
 /*Footer*/
+
 #footer {
     color: whitesmoke;
     background-color: #343a40;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 #footer .row li {
@@ -53,4 +54,13 @@ body {
 
 .footer-container {
     width: 50rem;
+}
+
+#footer .footer-container .col-lg-6 i {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+#footer .footer-container .col-lg-6 i:hover {
+    font-size: 35px;
 }
