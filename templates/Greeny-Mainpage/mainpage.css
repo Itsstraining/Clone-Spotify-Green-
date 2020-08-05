@@ -1,4 +1,5 @@
 body {
+    background-repeat: no-repeat;
     width: 100%;
     margin: 0 auto;     
 }
@@ -7,7 +8,7 @@ body {
     display: flex;
     font-size: 20px;
     font-weight: 700;
-    width: 100rem;
+    width: 90rem;
     padding: initial;
 }
 
@@ -25,26 +26,98 @@ body {
 }
 
 .format {
-    /* width: 1000px; */
+    opacity: 0.7;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
     display: flex;
     justify-content: center;
+    background-color: #343a40;
 }
 
 #homepage {
     background-color: #343a40;
+    z-index: 100;
+    top: 0;
 }
 
 
 /*Carousel*/
 
-#infor {
-    margin: 10px auto;
-    width: 1200px;
-}
-
 img {
     width: 100%;
-    height: 600px;
+    height: 700px;
+}
+
+h3 {
+    font-family: fantasy;
+}
+
+
+/*Video*/
+
+.container .music-list .music-img img {
+    height: 500px;
+}
+
+.container .music-list .music-detail {
+    text-align: center;
+}
+
+.container .music-list .music-detail h5 {
+    opacity: 0.5;
+}
+
+.container .music-list .music-play-list {
+    width: 600px;
+    height: 500px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.container .music-list .music-img {
+    position: relative;
+}
+
+.container .music-list .music-img .music-audio {
+    position: absolute;
+    opacity: 0.7;
+    left: 125px;
+    bottom: 10px;
+}
+
+.container .music-list .music-play-list .music-play-list-number {
+    font-family: inherit;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #efeaeabd;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon .fa-play:active {
+    color: #007bff;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon .fa-pause:active {
+    color: rgb(216, 16, 16);
+}
+
+
+/*Albums*/
+
+.container .col-md-4 img {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 400px;
 }
 
 
@@ -55,6 +128,7 @@ img {
     background-color: #343a40;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 #footer .row li {
@@ -63,4 +137,13 @@ img {
 
 .footer-container {
     width: 50rem;
+}
+
+#footer .footer-container .col-lg-6 i {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+#footer .footer-container .col-lg-6 i:hover {
+    font-size: 35px;
 }
