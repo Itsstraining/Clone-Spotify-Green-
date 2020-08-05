@@ -6,45 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loginstyle.css">
     <title>Login</title>
+    <link rel="icon" href="../img/logo1.png">
+
 </head>
 
 <body>
-    <div class="content">
-        <h2>
-            Đăng Nhập
-        </h2>
+    <div class="signUp">
+        <div class="signUpHeader">
+            <div class="container">
+                <div class="boxContent">
+                    <a href="./Login.html">
+                        <img class="logo" src="../img/nền đen.png" alt="logo" width="20%" />
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <form method="">
-        <div><input class="form-control" type="email" name="email" placeholder="Địa chỉ email/Tài khoản người dùng"></div>
-        <div><input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu"></div>
-        <div><input type="checkbox" id="remember-me" name="Nhớ mật Khẩu" value="Nhớ mật khẩu">
-            <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br></div>
-        <div>
-            <a class="" href="">
-                <i class="" aria-hidden="true"></i>Quên Mật Khẩu Của Bạn ?</a>
+
+    <div class="signUpBody">
+        <div class="container">
+            <div class="boxContent">
+                <div>
+                    <h2>
+                        Để tiếp tục, hãy đăng nhập vào Grenny.
+                    </h2>
+                </div>
+                <form name="DuLieu">
+                    <div><input class="form-control" type="email" name="email"
+                            placeholder="Địa chỉ email/Tài khoản người dùng"></div>
+                    <div><input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu"></div>
+                    <div style="display: flex; justify-content: start;">
+                        <input type="checkbox" id="remember-me" name="Nhớ mật Khẩu" value="Nhớ mật khẩu">
+                        <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br></div>
+                    <div>
+                        <a class="" href="" style="font-size:15px; display: flex; justify-content: start;">Quên Mật
+                            Khẩu</a>
+                    </div>
+                    <div class="login">
+                        <div class="login logindangnhap" type="submit">Đăng Nhập</div>
+                    </div>
+                    <div>
+                        <strong class="line">Hoặc</strong>
+                    </div>
+                </form>
+                <div>
+                    <div class="content">
+                        <div class="button buttonFacebook">Đăng Nhập Với Facebook</div>
+                    </div>
+                    <div class="content">
+                        <div class="button buttonApple">Đăng Nhập Với Apple</div>
+                    </div>
+                    <div class="content">
+                        <div class="button buttonGoogle">Đăng Nhập Với Google</div>
+                    </div>
+                </div>
+                <div class="login">
+                    <div class="login logindangnhap" type="submit">Đăng Ký</div>
+                </div>
+
+            </div>
         </div>
-        <div class="">
-            <button class="login" type="submit">Đăng Nhập</button>
+    </div>
+
+    <div class="signUp">
+        <div class="signUpHeader">
+            <div class="container">
+                <div class="boxContent">
+                    <p style="color:black; font-size: 0.75em;"> <br>
+                        Nếu bạn nhấp vào "Đăng nhập bằng Facebook" và không phải là người dùng Grenny, bạn sẽ phải đăng
+                        ký và chấp thuận
+                        <a href="" target="_blank">các Điều khoản & Điều kiện</a><br>
+                        và
+                        <a href="" target="_blank"> Chính sách Quyền riêng tư của Grenny.</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-            <strong class="line">Hoặc</strong>
-        </div>
-
-    </form>
-
-    <form name="">
-        <div class=" "><button class="">Đăng Nhập Với Facebook</button></div>
-        <div class=" "><button class="">Đăng Nhập Với Apple</button></div>
-        <div class=" "><button class="">Đăng Nhập Với Google</button></div>
-    </form>
-
-    <form name="register">
-        <strong class="line">
-            <button class="">Đăng Ký</button>
-        </strong>
-    </form>
-
-
+    </div>
+    
 </body>
 
 </html>
