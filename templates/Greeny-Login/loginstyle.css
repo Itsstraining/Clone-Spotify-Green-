@@ -7,16 +7,69 @@ body {
         text-align: center;
 }
 
+
+/* .login */
+.signUp h2{
+    background-color: white;
+    color: #222326;
+    min-width: 320px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.signUpHeader {
+    background-color:white;
+    padding: 1em 0 1em 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    /* padding: 0 15px 15px 15px; */
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.boxContent {
+    margin: auto;
+    max-width: 26.875em;
+}
+
+.logo{
+    background: url(/images/download.svg) transparent no-repeat center center;
+    background-size: contain;
+    display:block;
+    margin: auto;
+    width: 197px
+}
+
+/* .body */
+.signUpBody {
+    background-color: white;
+    border-top: 1px solid #dfe0e6; /*vien*/
+    border-bottom: 1px solid #dfe0e6;;
+}
+
 a{
     color: #1db954;
 }
 
+
 .login{
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+}
+
+
+.logindangnhap{
     font-size: 30px;
     line-height: 1;
     color: #fff;
     background-color: #1db954;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px;
@@ -27,6 +80,12 @@ a{
     min-width: 160px;
     text-transform: uppercase;
     white-space: normal;
+}
+
+
+
+.login :hover{
+    opacity: 0.8;
 }
 
 strong {
@@ -41,7 +100,7 @@ strong {
 }
 
 .form-control {
-    width: 30%;
+    width: 100%;
     height: 40px;
     padding: 6px 12px;
     background-color: #fff;
@@ -92,4 +151,68 @@ strong {
     content: '';
 }
 
+/* button  */
+.button {
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+}
 
+.button:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px #999;
+}
+
+.buttonFacebook {
+    color: white;
+    background-color: #3B5998;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px 48px;
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.buttonApple {
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px 48px;
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.buttonGoogle {
+    color: white;
+    background-color: #fa0707;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px 48px;
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+//

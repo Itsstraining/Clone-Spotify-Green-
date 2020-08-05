@@ -4,39 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Register</title>
+    <link rel="stylesheet" href="./registerstyle.css">
+    <link rel="icon" href="../img/logo1.png">
 
 <body>
-    <div>
-        <p>
-            Đăng ký miễn phí để bắt đầu nghe.
-        </p>
+    <div class="register">
+        <div class="registerHeader">
+            <div class="container">
+                <div class="boxContent">
+                    <img class="logo" src="../img/nền đen.png" alt="logo" width="20%" />
+                </div>
+            </div>
+        </div>
     </div>
-    <form action="">
-        <div>
-            <p>Email Của bạn là gì ?</p>
-            <div><input type="email" name="email" placeholder="Địa chỉ email/Tài khoản người dùng"></div>
+
+    <div class="registerBody">
+        <div class="container">
+            <div class="boxContent">
+                <div>
+                    <h2>
+                        Đăng ký miễn phí để bắt đầu nghe.
+                    </h2>
+                </div>
+                <form name="DuLieu">
+                    <div>
+                        <p>Email Của bạn là gì ?</p>
+                        <input class="form-control" type="email" name="email"
+                            placeholder="Địa chỉ email/Tài khoản người dùng">
+                    </div>
+                    <p>Tên Đăng Nhập</p>
+                    <input class="form-control" type="name" name="name" placeholder="Tên Đăng Nhập">
+                    <div>
+                        <p>Mật Khẩu</p>
+                        <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
+                    </div>
+                    <div>
+                        <p>Nhập lại mật khẩu</p>
+                        <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="remember-me" name="name"
+                            value="Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny">
+                        <label for="remember-me">Tôi đồng ý với</label>
+                        <label for="remember-me"><a href=""> Điều khoản và điều kiện sử dụng</a></label>
+                        <label for="remember-me">và</label>
+                        <label for="remember-me"><a href="">Chính sách quyền riêng tư</a></label>
+                        <label for="remember-me">của Grenny</label>
+                    </div>
+                    <div class="login">
+                        <div class="login logindangnhap" type="submit">Đăng Ký</div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <p>Tên Đăng Nhập</p>
-            <div><input type="name" name="name" placeholder="Tên Đăng Nhập"></div>
+    </div>
+    <div class="register">
+        <div class="registerHeader">
+            <div class="container">
+                <div class="boxContent">
+                    <p style="color:black; font-size: 0.75em;"> <br>
+                        Khi nhấp vào Đăng ký, bạn đồng ý với
+                        <a href="" target="_blank"> Điều khoản và điều kiện sử dụng</a><br>
+                        của Grenny.
+                        Để tìm hiểu thêm về cách thức Grenny thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu cá nhân của
+                        bạn, vui lòng đọc
+                        <a href="" target="_blank"> Chính sách quyền riêng tư</a>
+                        của Grenny.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Mật Khẩu</p>
-            <div><input type="password" name="password" placeholder="Mật Khẩu"></div>
-        </div>
-        <div>
-            <p>Nhập lại mật khẩu</p>
-            <div><input type="password" name="password" placeholder="Nhập lại mật khẩu"></div>
-        </div>
-        <div><input type="checkbox" id="remember-me" name="name" value="Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny">
-            <label for="remember-me">Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny</label><br></div>
-        <div>
-    </form>
-    <form action="">
-        <div><button class="" type="submit">Đăng Ký Ngay</button></div>
-    </form>
+    </div>
 </body>
 
 </html>
