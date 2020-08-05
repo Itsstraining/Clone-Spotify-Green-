@@ -1,0 +1,117 @@
+body {
+    width: 100%;
+    margin: 0 auto;     
+}
+
+#container{
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.homepage{
+    z-index: 1;
+}
+
+/*---------------- navbar ----------------*/
+
+.bg-dark {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100rem;
+    padding: initial;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white ;
+    /* color: rgba(0,0,0,.5); */
+}
+
+.format {
+    background-color: #343a40;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*--------------- H    O   M   E       b   o   d   y --------------*/
+
+.container-1{
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.table{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.home-header{
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+}
+
+.home-header img{
+    background-size: fixed;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+    opacity: 0.5        ;
+    margin: 0 auto;
+}
+
+
+h1{
+    color: #343a40;
+    position: relative;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    letter-spacing: .18em;
+    line-height: 60px;
+    /* text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; */  
+}
+
+p{
+    color: #343a40;
+    position: relative;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    letter-spacing: .18em;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+
+/* img{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    background-size: cover;
+} */
+nav{
+    position: fixed;
+    z-index: 3;
+}

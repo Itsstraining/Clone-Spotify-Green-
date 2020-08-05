@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;     
 }
 
 .bg-dark {
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white;
+    color: white ;
     /* color: rgba(0,0,0,.5); */
 }
 
