@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="loginstyle.css">
     <title>Login</title>
     <link rel="icon" href="../img/logo1.png">
-
 </head>
 
 <body>
@@ -32,15 +31,26 @@
                     </h2>
                 </div>
                 <form name="DuLieu">
-                    <div><input class="form-control" type="email" name="email"
-                            placeholder="Địa chỉ email/Tài khoản người dùng"></div>
-                    <div><input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu"></div>
-                    <div style="display: flex; justify-content: start;">
+                    <div id="error"></div>
+                    <div><input id="name" class="form-control" type="email" name="email"
+                            placeholder="Địa chỉ email/Tài khoản người dùng" required>
+                    </div>
+                    <div><input id="password" class="form-control" type="password" name="passwords"
+                            placeholder="Mật Khẩu">
+                    </div>
+                    <div style=" justify-content: start; float: left;">
                         <input type="checkbox" id="remember-me" name="Nhớ mật Khẩu" value="Nhớ mật khẩu">
-                        <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br></div>
+                        <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br>
+
+                    </div>
+
                     <div>
-                        <a class="" href="" style="font-size:15px; display: flex; justify-content: start;">Quên Mật
-                            Khẩu</a>
+                        <span>
+                            <u>
+                                <a class="forgot" href="" style="font-size:15px; ">Quên Mật
+                                    Khẩu ?
+                                </a></u>
+                        </span>
                     </div>
                     <div class="login">
                         <div class="login logindangnhap" type="submit">Đăng Nhập</div>
@@ -51,21 +61,31 @@
                 </form>
                 <div>
                     <div class="content">
-                        <div class="button buttonFacebook">Đăng Nhập Với Facebook</div>
-                    </div>
-                    <div class="content">
-                        <div class="button buttonApple">Đăng Nhập Với Apple</div>
-                    </div>
-                    <div class="content">
-                        <div class="button buttonGoogle">Đăng Nhập Với Google</div>
-                    </div>
-                </div>
-                <div class="login">
-                    <div class="login logindangnhap" type="submit">Đăng Ký</div>
-                </div>
+                        <a href="https://www.facebook.com/" style="color: aliceblue;">
+                            <div class="button buttonFacebook">Đăng Nhập Với Facebook
+                        </a>
 
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="https://appleid.apple.com/#!&page=signin" style="color: aliceblue;">
+                        <div class="button buttonApple">Đăng Nhập Với Apple</div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="https://accounts.google.com/" style="color: aliceblue;">
+                        <div class="button buttonGoogle">Đăng Nhập Với Google</div>
+                    </a>
+                </div>
             </div>
+            <div class="login">
+                <a href="../Greeny-Register/Register.html">
+                    <div class="login logindangnhap" type="submit">Đăng Ký</div>
+                </a>
+            </div>
+
         </div>
+    </div>
     </div>
 
     <div class="signUp">
@@ -83,7 +103,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

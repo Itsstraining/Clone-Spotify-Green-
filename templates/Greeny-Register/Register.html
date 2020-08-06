@@ -8,75 +8,172 @@
     <link rel="stylesheet" href="./registerstyle.css">
     <link rel="icon" href="../img/logo1.png">
 
-<body>
-    <div class="register">
-        <div class="registerHeader">
+    <body>
+        <div class="register">
+            <div class="registerHeader">
+                <div class="container">
+                    <div class="boxContent">
+                        <img class="logo" src="../img/nền đen.png" alt="logo" width="20%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registerBody">
             <div class="container">
                 <div class="boxContent">
-                    <img class="logo" src="../img/nền đen.png" alt="logo" width="20%" />
-                </div>
-            </div>
-        </div>
-    </div>
+                    <div>
+                        <h2>
+                            Đăng ký miễn phí để bắt đầu nghe.
+                        </h2>
+                    </div>
+                    <form name="DuLieu">
 
-    <div class="registerBody">
-        <div class="container">
-            <div class="boxContent">
-                <div>
-                    <h2>
-                        Đăng ký miễn phí để bắt đầu nghe.
-                    </h2>
-                </div>
-                <form name="DuLieu">
-                    <div>
-                        <p>Email Của bạn là gì ?</p>
-                        <input class="form-control" type="email" name="email"
-                            placeholder="Địa chỉ email/Tài khoản người dùng">
-                    </div>
-                    <p>Tên Đăng Nhập</p>
-                    <input class="form-control" type="name" name="name" placeholder="Tên Đăng Nhập">
-                    <div>
-                        <p>Mật Khẩu</p>
-                        <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
-                    </div>
-                    <div>
-                        <p>Nhập lại mật khẩu</p>
-                        <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
-                    </div>
+                        <div>
+                            <b>
+                            <p style="text-align: start;">Email Của bạn là gì ?</p>
+                        </b>
+                            <input class="form-control" type="email" name="email" placeholder="Địa chỉ email/Tài khoản người dùng">
+                        </div>
+                        <b>
+                        <p style="text-align: start;">Tên Đăng Nhập :</p>
+                    </b>
+                        <input class="form-control" type="name" name="name" placeholder="Tên Đăng Nhập">
+                        <div>
+                            <b>
+                            <p style="text-align: start;">Mật Khẩu :</p>
+                        </b>
+                            <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
+                        </div>
+                        <div>
+                            <b>
+                            <p style="text-align: start;">Nhập lại mật khẩu :</p>
+                        </b>
+                            <input class="form-control" type="password" name="passwords" placeholder="Mật Khẩu">
+                        </div>
+                        <div class="content">
 
+                            <p>Date or Birth</p><br>
+                            <li>
+                                <div style="display: flex; flex-direction: row;">
+
+                                    <div class="controlDOB controlDOB-day">
+                                        <select id="resigter-dob-day" name="signUpDOBDay">
+                                        <option value selected="selected">Day</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="controlDOB controlDOB-month">
+                                        <select id="resigter-dob-month" name="signUpDOBMonth">
+                                        <option value selected="selected">Month</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="controlDOB controlDOB-year">
+                                        <input type="number" id="resigter-dob-year" name="signUpDOBYear" style="box-sizing: border-box; width: auto;
+                                    height: 50px;" placeholder="Year">
+                                    </div>
+                            </li>
+
+                            </div>
+                            <b>
+                        <p>Bạn giới tính gì ? </p>
+                    </b>
+                            <div class="gender">
+                                <label for="resigterMale" class="radioControl">
+                            <input type="radio" value="Male" id="resigterMale" name="signUp" required="required">Male
+                        </label>
+                                <label for="resigterFemale" class="radioControl female">
+                            <input type="radio" value="Female" id="resigterFemale" name="signUp"
+                                required="required">Female
+                        </label>
+                                <label for="resigterAnother" class="radioControl female">
+                            <input type="radio" value="Another" id="resigterAnother" name="signUp"
+                                required="required">Another
+                        </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="remember-me" name="name" value="Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny">
+                                <label for="remember-me">Tôi đồng ý với</label>
+                                <label for="remember-me"><a href=""> Điều khoản và điều kiện sử dụng</a></label>
+                                <label for="remember-me">và</label>
+                                <label for="remember-me"><a href="">Chính sách quyền riêng tư</a></label>
+                                <label for="remember-me">của Grenny</label>
+                            </div>
+                            <div class="dangky">
+                                <div class="dangky dangkymau" type="submit">Đăng Ký</div>
+                            </div>
+
+                        </div>
+                    </form>
                     <div>
-                        <input type="checkbox" id="remember-me" name="name"
-                            value="Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny">
-                        <label for="remember-me">Tôi đồng ý với</label>
-                        <label for="remember-me"><a href=""> Điều khoản và điều kiện sử dụng</a></label>
-                        <label for="remember-me">và</label>
-                        <label for="remember-me"><a href="">Chính sách quyền riêng tư</a></label>
-                        <label for="remember-me">của Grenny</label>
+                        <h5>
+                            Bạn có tài khoản ?
+                            <u>
+                        <a href="../Greeny-Login/Login.html">
+                            Đăng nhập
+                        </a>
+                    </u>
+                        </h5>
                     </div>
-                    <div class="login">
-                        <div class="login logindangnhap" type="submit">Đăng Ký</div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="register">
-        <div class="registerHeader">
-            <div class="container">
-                <div class="boxContent">
-                    <p style="color:black; font-size: 0.75em;"> <br>
-                        Khi nhấp vào Đăng ký, bạn đồng ý với
-                        <a href="" target="_blank"> Điều khoản và điều kiện sử dụng</a><br>
-                        của Grenny.
-                        Để tìm hiểu thêm về cách thức Grenny thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu cá nhân của
-                        bạn, vui lòng đọc
-                        <a href="" target="_blank"> Chính sách quyền riêng tư</a>
-                        của Grenny.
-                    </p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        <div class="register">
+            <div class="registerHeader">
+                <div class="container">
+                    <div class="boxContent">
+                        <p style="color:black; font-size: 0.75em;"> <br> Khi nhấp vào Đăng ký, bạn đồng ý với
+                            <a href="" target="_blank"> Điều khoản và điều kiện sử dụng</a><br> của Grenny. Để tìm hiểu thêm về cách thức Grenny thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu cá nhân của bạn, vui lòng đọc
+                            <a href="" target="_blank"> Chính sách quyền riêng tư</a> của Grenny.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
 </html>

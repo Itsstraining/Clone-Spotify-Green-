@@ -9,58 +9,61 @@ body {
 
 
 /* .login */
-.register h2{
-background-color: white;
-color: #222326;
-min-width: 320px;
-position: relative;
-margin-bottom: 1em;
+
+.register h2 {
+    background-color: white;
+    color: #222326;
+    min-width: 320px;
+    position: relative;
+    margin-bottom: 1em;
 }
 
 .registerHeader {
-background-color:white;
-padding: 1em 0 1em 0;
+    background-color: white;
+    padding: 1em 0 1em 0;
 }
 
 .container {
-margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .boxContent {
-margin: auto;
-max-width: 26.875em;
+    margin: auto;
+    max-width: 26.875em;
 }
 
-.logo{
-background: url(/images/download.svg) transparent no-repeat center center;
-background-size: contain;
-display:block;
-margin: auto;
-width: 197px
+.logo {
+    background: url(/images/download.svg) transparent no-repeat center center;
+    background-size: contain;
+    display: block;
+    margin: auto;
+    width: 197px
 }
+
 
 /* .body */
+
 .registerBody {
-background-color: white;
-border-top: 1px solid #dfe0e6; /*vien*/
+    background-color: white;
+    border-top: 1px solid #dfe0e6;
+    /*vien*/
 }
 
-a{
-color: #1db954;
+a {
+    color: #1db954;
 }
 
-.login{
+.dangky {
     margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
     max-width: 320px;
 }
 
-
-.logindangnhap{
+.dangkymau {
     font-size: 30px;
     line-height: 1;
     color: #fff;
@@ -69,7 +72,7 @@ color: #1db954;
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-property: background-color, border-color, color, box-shadow, filter;
     transition-duration: .3s;
     border-width: 0;
     letter-spacing: 2px;
@@ -78,36 +81,100 @@ color: #1db954;
     white-space: normal;
 }
 
-
-
-.login :hover{
+.dangky :hover {
     opacity: 0.8;
 }
+
 strong {
-font-weight: 500;
-text-align: center;
+    font-weight: 500;
+    text-align: center;
 }
 
-.checkbox{
-padding-left: 0.5em;
-font-weight: 400;
+.checkbox {
+    padding-left: 0.5em;
+    font-weight: 400;
 }
 
 .form-control {
-width: 100%;
-height: 40px;
-padding: 6px 12px;
-background-color: #fff;
-background-image: none;
-border: 1px solid #d9dadc;
-border-radius: 0;
-margin: 5px ;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9dadc;
+    border-radius: 0;
 }
 
 .content {
-border-top: none;
-padding-left: 0;
-padding-right: 0;
-background-color: white;
-padding: 1em;
+    border-top: none;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+    padding: 1em;
+}
+
+
+/* D.o.b */
+
+label {
+    font-size: 15px;
+    color: #88898c;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.controlDOB {
+    display: inline-block;
+    line-height: 0;
+    text-transform: capitalize;
+}
+
+.controlDOB-day {
+    margin-left: 5%;
+    width: 40%;
+    position: relative;
+}
+
+.controlDOB-month {
+    margin-left: -10%;
+    width: 40%;
+    position: relative;
+}
+
+.controlDOB-year {
+    /* width: 30%; */
+    position: relative;
+    margin-left: 1%;
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    display: block;
+    margin-bottom: 1em;
+}
+
+select {
+    height: 49px;
+    line-height: 1em;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid #88898c;
+    color: #88898c;
+    margin: 0;
+    /* width: 40%; */
+}
+
+.radioControl {
+    display: inline-block;
+}
+
+.gender {
+    margin-left: -20%;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.female {
+    margin-left: 25%;
 }
