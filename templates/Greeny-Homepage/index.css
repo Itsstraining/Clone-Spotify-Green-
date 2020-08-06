@@ -1,17 +1,16 @@
 body {
+    font-weight: 300;
+    margin: 0;
     width: 100%;
-    margin: 0 auto;     
+    font-weight: 1em;
 }
 
-.homepage{
-    z-index: 1;
-}
 
 /*---------------- navbar ----------------*/
 
 .bg-dark {
     display: flex;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
     width: 100rem;
     padding: initial;
@@ -33,9 +32,10 @@ nav{
 
 .navbar-light .navbar-nav .nav-link {
     color: white ;
-    padding: 0rem;
-    padding-right: .5rem;
-    padding-left: .5rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#2ecc71 !important;
 }
 
 .navbar-light .navbar-nav .nav-none {
@@ -61,61 +61,49 @@ nav{
 
 /*--------------- H    O   M   E       b   o   d   y --------------*/
 
-.container{
-    width: 100rem;
-    margin: 0 auto;
-}
 
 .table{
-    position: absolute;
+    position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    top:300px;
+    display: flexbox;
+    justify-content: center;
+    top: 3.5em;
     }
 
-.home-header{
-    height:100vh;
-    /* position: fixed; */
-    top:0;
-    left:0;
-    width:100vw;
-}
 
 .home-header img{
     background-size: fixed;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
     z-index: -100;
     opacity: 0.5;
     margin: 0 auto;
+    width: 100%;
+    top: 0;
 }
-
 
 h1{
     color: #343a40;
-    position: relative;
-    font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    font-size: 1em;
     letter-spacing: .18em;
-    line-height: 60px;
+    line-height: 1em;
+    padding: .5em;
+    margin: 0;
 }
 
 .table p{
     color: #343a40;
-    position: relative;
-    font-size: 35px;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    font-size: .8em;
     letter-spacing: .18em;
-    line-height: 60px;
+    line-height: 1em;
+    padding: 0.5em;
+    margin: 0;
 }
 
 .scroll-icon{
     color: #343a40;
-    font-size: 50px;
-    position: relative;
+    font-size: 1em;
+    padding: 1em;
 
 }
 
