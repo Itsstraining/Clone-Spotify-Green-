@@ -110,13 +110,13 @@
         max-width: 100%;
         display: flex;
         justify-content: center;
-        margin: 6em 15em 3em;
+        margin: 6em 17em 3em;
     }
 
     .help{
-        width: 63%;
+        width: 65%;
         float: left;
-        margin-right: 2% ;
+        margin-right: 5% ;
     }
 
     .topics{
@@ -135,7 +135,7 @@
     }
 
     .suggest-box{
-        width: 35%;
+        width: 30%;
         float: left;
     }
 }
