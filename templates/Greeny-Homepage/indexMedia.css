@@ -1,0 +1,36 @@
+@media screen and (min-width: 300px){
+    .home-header:before, .home-header:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .table{
+        top: 5em;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    
+    .table p{
+        font-size: 1em;
+    }
+    
+    .scroll-icon{
+        top: 5em;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .home-header:before, .home-header:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .table{
+        top: 6em;
+    }
+    
+}
