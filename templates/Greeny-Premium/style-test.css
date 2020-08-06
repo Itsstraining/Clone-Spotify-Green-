@@ -1,233 +1,306 @@
-         :root {
-            --xamnhat: rgb(0, 0, 0, 0.7);
-            --xanhmint: rgb(0, 177, 79);
-            --cam: rgb(249, 177, 68);
-        }
-        
-        html {
-            background-color: rgb(245, 245, 245);
-            color: white;
-            font-size: 62.5%;
-            font-family: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-        }
-        
-        body {
-            margin: 0;
-        }
-        
-        .premium-header span {
-            font-size: 4.5rem;
-            margin: .5rem;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        /* img {
-    width: 10rem;
-    height: 10rem;
-} */
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: .5rem;
-            text-transform: uppercase;
-            color: var(--cam);
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 4.2rem;
-        }
-        
-        h3 {
-            font-size: 4rem;
-        }
-        
-        h4 {
-            font-size: 3.5rem;
-        }
-        
-        h5 {
-            font-size: 3rem;
-        }
-        
-        h6 {
-            font-size: 2.5rem;
-        }
-        
-        p {
-            font-size: 2rem;
-            margin: 0;
-            font-weight: 550;
-            text-align: center;
-        }
-        
-        ul {
-            display: flex;
-            /* justify-content: center; */
-            margin: 0;
-            padding: 0;
-        }
-        
-        li>h6 {
-            width: 180px;
-            height: 135px;
-        }
-        
-        li>p {
-            text-align: justify;
-        }
-        
-        ul li {
-            display: inline-block;
-            padding: 20px;
-            width: 25%;
-        }
-        
-        li>img {
-            width: 100%;
-        }
-        /* BUTTON */
-        
-        .btn {
-            border: 0;
-            border-radius: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-        }
-        
-        .btn:hover {
-            opacity: 0.6;
-            box-shadow: 1.5px 1.5px rgb(0, 0, 0, 0.5)
-        }
-        
-        .btn1 {
-            width: 20rem;
-            background-color: var(--cam);
-            font-size: 2.3rem;
-            font-weight: 700;
-            text-align: center;
-            padding: 6 px;
-        }
-        
-        .page-container {
-            width: 90rem;
-            background-color: var(--xanhmint);
-            justify-content: space-between;
-        }
-        
-        .premium-body {
-            width: 90rem;
-        }
-        
-        .page-premium {
-            display: flex;
-            justify-content: center;
-            width: 98.7vw;
-            height: 670px;
-            background-color: var(--xanhmint);
-        }
-        
-        .premium-header div {
-            justify-content: center;
-            display: flex;
-            align-items: center;
-        }
-        
-        .premium-package {
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            /* height: 35em; */
-            padding: 3rem;
-        }
-        
-        .package-head {
-            padding: 1.3rem;
-            font-size: 3.7rem;
-            font-weight: 550;
-            text-transform: uppercase;
-        }
-        
-        .package {
-            width: 26rem;
-            color: var(--xanhmint);
-            /* height: 50rem; */
-            height: 42rem;
-            /* border: 4px solid rebeccapurple; */
-            border-radius: 2rem;
-            background-color: whitesmoke;
-        }
-        
-        .package:hover {
-            box-shadow: 5px 7px var(--cam);
-            opacity: 0.9;
-        }
-        
-        .pack {
-            border-radius: 2rem;
-            width: 26rem;
-            height: 110px;
-        }
-        
-        .pack1 {
-            background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-6-month.svg")
-        }
-        
-        .pack2 {
-            background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-1-year.svg")
-        }
-        
-        .pack3 {
-            background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-2-year.svg");
-        }
-        
-        .premium-btn {
-            margin: 10px 0;
-            justify-content: center;
-            display: flex;
-        }
-        
-        .package-price {
-            height: 12rem;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .price-head {
-            font-size: 8rem;
-            padding-left: 13px;
-            display: inline-block;
-        }
-        
-        .price-foot span {
-            display: inline-block;
-            width: 100%;
-            vertical-align: baseline;
-        }
-        
-        .zeronum {
-            position: relative;
-            top: 14px;
-            text-align: start;
-            font-size: 4.0rem;
-        }
-        
-        .currency {
-            position: relative;
-            text-align: center;
-            font-size: 3.7rem;
-            bottom: 6px;
-        }
-        
-        .why {
-            color: black;
-        }
-        
-        .
+:root {
+    --xamnhat: rgb(0, 0, 0, 0.7);
+    --xanhmint: rgb(0, 177, 79);
+    --cam: rgb(249, 177, 68);
+}
+
+html {
+    /* background-color: rgb(245, 245, 245); */
+    background-color: rgba(241, 240, 240, 0.925);
+    color: white;
+    font-size: 62.5%;
+    font-family: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.premium-header span {
+    font-size: 4.5rem;
+    margin: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: .5rem;
+    text-transform: uppercase;
+    color: var(--cam);
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h3 {
+    font-size: 4rem;
+    opacity: 0.8;
+}
+
+h4 {
+    font-size: 3.5rem;
+    opacity: 0.7;
+}
+
+h5 {
+    font-size: 3rem;
+    opacity: 0.6;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 550;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0;
+    padding: 0;
+}
+
+li>h6 {
+    width: 180px;
+    height: 135px;
+}
+
+li>p {
+    text-align: justify;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+    width: 25%;
+}
+
+li>img {
+    width: 100%;
+}
+
+
+/* BUTTON */
+
+.btn {
+    border: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: 1.5px 1.5px rgb(0, 0, 0, 0.5)
+}
+
+.btn1 {
+    width: 20rem;
+    background-color: var(--cam);
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 6 px;
+}
+
+.page-container {
+    width: 90rem;
+    height: 100vh;
+    /* background-color: var(--xanhmint); */
+    justify-content: space-between;
+}
+
+.premium-body {
+    width: 90rem;
+}
+
+.page {
+    background-color: rgb(245, 245, 245);
+}
+
+.premium-header div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.premium-package {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 35em; */
+    padding: 3rem;
+}
+
+.package-head {
+    padding: 1.3rem;
+    font-size: 3.7rem;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.package {
+    width: 26rem;
+    color: var(--xanhmint);
+    /* height: 50rem; */
+    height: 42rem;
+    /* border: 4px solid rebeccapurple; */
+    border-radius: 2rem;
+    background-color: whitesmoke;
+}
+
+.package:hover {
+    box-shadow: 5px 7px var(--cam);
+    opacity: 0.9;
+}
+
+.pack {
+    border-radius: 2rem;
+    width: 26rem;
+    height: 110px;
+}
+
+.pack1 {
+    background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-6-month.svg")
+}
+
+.pack2 {
+    background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-1-year.svg")
+}
+
+.pack3 {
+    background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-2-year.svg");
+}
+
+.premium-btn {
+    margin: 10px 0;
+    justify-content: center;
+    display: flex;
+}
+
+.package-price {
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-head {
+    font-size: 8rem;
+    padding-left: 13px;
+    display: inline-block;
+}
+
+.price-foot span {
+    display: inline-block;
+    width: 100%;
+    vertical-align: baseline;
+}
+
+.zeronum {
+    position: relative;
+    top: 14px;
+    text-align: start;
+    font-size: 4.0rem;
+}
+
+.currency {
+    position: relative;
+    text-align: center;
+    font-size: 3.7rem;
+    bottom: 6px;
+}
+
+.why {
+    color: black;
+}
+
+.premium-footer {
+    margin-top: 30px;
+}
+
+.banner {
+    background-color: var(--xanhmint);
+    /* width: 100vw; */
+    height: 679px;
+    justify-content: center;
+    display: flex;
+}
+
+.end {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: inline-block;
+}
+
+.pic>img {
+    border-radius: 400px;
+    box-shadow: 5px 5px rgb(251, 227, 109);
+}
+
+.download-header {
+    height: 520px;
+    display: flex;
+    /* justify-content: left; */
+}
+
+.download-title {
+    width: 40%;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 170px;
+}
+
+.icon-pc {
+    justify-content: center;
+    /* position: relative; */
+    height: 512px;
+    width: 512px;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/desktop-computer-colored/48/Desktop___Services_Artboard_5-512.png");
+}
+
+.icon-pc>img {
+    position: relative;
+    top: 170px;
+}
+
+.download-icon-app {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.download-icon-app div {
+    margin: 20px 30px;
+}
+
+.device-img {
+    display: flex;
+    justify-content: center;
+}
+
+.list-device ul li {
+    font-size: 1.2em;
+    padding: 0;
+    text-decoration: underline;
+    border-right: 1px solid black;
+    text-align: center;
+}
