@@ -1,13 +1,15 @@
 body {
+    font-weight: 300;
+    margin: 0;
     width: 100%;
-    margin: 0 auto;
+    font-weight: 1em;
 }
 
 .bg-dark {
     display: flex;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
-    width: 100rem;
+    width: 100em;
     padding: initial;
 }
 
@@ -21,11 +23,20 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: white !important;
-    /* color: rgba(0,0,0,.5); */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#2ecc71 !important;
+}
+
+.navbar-light .navbar-nav .nav-none {
+    color: white ;
+    padding: .5rem 1rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
 
 .format {
-    /* width: 1000px; */
     display: flex;
     justify-content: center;
 }
@@ -34,8 +45,164 @@ body {
     background-color: #343a40;
 }
 
-/* Help page */
 
+/*---------------- Help page ---------------*/
+
+.help-header{
+    background-color: #A5FAC5;
+    height: 20em;
+    padding: 6em 1em;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+}
+
+input[type=text]{
+    width: 63%;
+    height: 3em;
+    border: 0.1em solid #aaa;
+    border-radius: 5em;
+    outline: none;
+    transition: .3s;
+} 
+
+input[type=text]:focus{
+    border-color: #343a40;
+} 
+
+.inputWithIcon input[type=text]{
+    padding-left: 3em;
+}
+
+.inputWithIcon {
+    position: relative;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.inputWithIcon i{
+    position: absolute;
+    margin: 0.7em 1em;
+}
+
+/*---------- second part of body--------- */
+
+.help-body{
+    background-color: #fff;
+    padding: 0.5em 1em;
+    margin: 2em 2em 2em;
+    font-size: 1.1em;
+}
+.help-topics h3{
+    padding: 0.5em;
+    border-bottom: .09em solid rgb(221, 218, 218);
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+.icon{
+    display: inline ;
+}
+
+.help-topics h4{
+    display: inline;
+}
+
+.col-a{
+    padding: 0.5em;
+    border-bottom: .09em solid rgb(221, 218, 218);
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.part1{
+    width: 15%;
+    float: left;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.part2{
+    width: 80%;
+    margin-inline-start: 5em;
+}
+
+.part2 p{
+    font-size: 1em;
+}
+
+.suggest-box h5{
+    font-size: 1.3em;
+}
+
+.box-1{
+    background-color: rgb(241, 236, 236);
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+.box-1{
+    text-decoration: none;
+}
+
+.box-2{
+    background-color: rgb(241, 236, 236);
+    padding: 1.5em;
+}
+
+.box-2 a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #2ecc71;
+    padding: .7em;
+    margin-top: 2%;
+    font-weight: bold;
+    border-radius: 1.5em;
+}
+
+.box-2 a:hover{
+    text-decoration: none;
+    color: #2ecc71;
+    background-color: #fff;
+    border-style: solid;
+}
+
+
+
+/* -------third part off body--------- */
+.help-footer{
+    background-color: #2ecc71;
+    padding: 3.5em 1em;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+.help-footer h2{
+    font-size: 2em;
+}
+
+.help-footer a{
+    text-decoration: none;
+    color: #2ecc71;
+    background-color: #fff;
+    padding: .7em;
+    margin-top: 2%;
+    font-weight: bold;
+    border-radius: 1.5em;
+}
+
+.help-footer a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #2ecc71;
+    border-style: solid;
+}
 
 
 /*Footer*/
@@ -45,7 +212,7 @@ body {
     background-color: #343a40;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 1em;
 }
 
 #footer .row li {
