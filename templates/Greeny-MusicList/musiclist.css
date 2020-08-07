@@ -10,6 +10,12 @@ body {
     font-weight: 700;
     width: 90rem;
     padding: initial;
+    background-color: black !important;
+}
+
+.bg-dark img {
+    width: 50px;
+    height: 50px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -25,6 +31,10 @@ body {
     /* color: rgba(0,0,0,.5); */
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(10, 213, 82);
+}
+
 .format {
     opacity: 0.7;
     width: 100vw;
@@ -33,11 +43,11 @@ body {
     top: 0;
     display: flex;
     justify-content: center;
-    background-color: #343a40;
+    background-color: black;
 }
 
 #homepage {
-    background-color: #343a40;
+    background-color: black;
     z-index: 100;
     top: 0;
 }
@@ -105,12 +115,14 @@ h3 {
 /*Footer*/
 
 #footer {
-    margin-top: 20px;
+    height: 100px;
     color: whitesmoke;
-    background-color: #343a40;
+    background-color: black;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    margin-top: 15px;
+    padding-top: 50px;
 }
 
 #footer .row li {
@@ -121,12 +133,49 @@ h3 {
     width: 50rem;
 }
 
-#footer .footer-container .col-lg-6 i {
+#footer .footer-container .col-lg-2 i {
     margin-right: 15px;
     font-size: 30px;
 }
 
-#footer .footer-container .col-lg-6 i:hover {
-    transition: all 0.5s;
-    font-size: 35px;
+#footer .footer-container .col-lg-2 a {
+    color: white;
+}
+
+#footer .footer-container .col-lg-2 a:hover {
+    text-decoration: none;
+    color: rgb(10, 213, 82)
+}
+
+#footer .footer-container .col-lg-4 {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#footer .footer-container .col-lg-4 i:hover {
+    font-size: 40px;
+    transition: all 0.8s;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo {
+    margin-right: 50px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon i {
+    margin-right: 10px;
 }
