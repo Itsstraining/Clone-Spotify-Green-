@@ -1,8 +1,22 @@
+:root{
+    --mauchu: rgb(0, 0, 0, 0.7);
+    --xamnhat:rgba(241, 240, 240, 0.925);
+    --xanhmint: rgb(0, 177, 79);
+    --xanhnhat:#2ecc71;
+    --cam: rgb(249, 177, 68);
+}
+
+
 body {
     font-weight: 300;
     margin: 0;
     width: 100%;
     font-weight: 1em;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
 }
 
 .bg-dark {
@@ -18,7 +32,7 @@ body {
 }
 
 .navbar-light .navbar-brand {
-    color: white;
+    color: var(--xanhmint);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,7 +40,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color:#2ecc71 !important;
+    color: var(--xanhmint) !important;
 }
 
 .navbar-light .navbar-nav .nav-none {
@@ -49,7 +63,6 @@ body {
 /*---------------- Help page ---------------*/
 
 .help-header{
-    background-color: #A5FAC5;
     height: 20em;
     padding: 6em 1em;
     display: flexbox;
@@ -92,15 +105,20 @@ input[type=text]:focus{
 
 /*---------- second part of body--------- */
 
+
+.help-page{
+    display: flex;
+    justify-content: center;
+}
+
 .help-body{
-    background-color: #fff;
     padding: 0.5em 1em;
     margin: 2em 2em 2em;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 .help-topics h3{
     padding: 0.5em;
-    border-bottom: .09em solid rgb(221, 218, 218);
+    border-bottom: .09em solid rgb(185, 183, 183);
     margin-bottom: 2em;
     font-size: 2em;
 }
@@ -118,15 +136,16 @@ input[type=text]:focus{
 }
 
 .part2 a:hover{
-    color: #2ecc71;
+    color: var(--cam);
     text-decoration: none;
 }
 
 .col-a{
     padding: 0.5em;
-    border-bottom: .09em solid rgb(221, 218, 218);
+    border-bottom: .09em solid rgb(185, 183, 183);
     margin-bottom: 1em;
     width: 100%;
+    height: 7em;
 }
 
 .part1{
@@ -151,7 +170,7 @@ input[type=text]:focus{
 }
 
 .box-1{
-    background-color: rgb(241, 236, 236);
+    background-color:var(--xamnhat);
     padding: 2em;
     margin-bottom: 1em;
     display: flex;
@@ -165,18 +184,18 @@ input[type=text]:focus{
 
 .box-1 a:hover{
     text-decoration: none;
-    color: #2ecc71;
+    color: var(--cam);
 }
 
 .box-2{
-    background-color: rgb(241, 236, 236);
+    background-color: var(--xamnhat);
     padding: 2em;
 }
 
 .box-2 a{
     text-decoration: none;
     color: #fff;
-    background-color: #2ecc71;
+    background-color: var(--cam);
     padding: .7em;
     margin-top: 2%;
     font-weight: bold;
@@ -185,7 +204,7 @@ input[type=text]:focus{
 
 .box-2 a:hover{
     text-decoration: none;
-    color: #2ecc71;
+    color: var(--cam);
     background-color: #fff;
     border-style: solid;
 }
@@ -194,7 +213,7 @@ input[type=text]:focus{
 
 /* -------third part off body--------- */
 .help-footer{
-    background-color: #2ecc71;
+    background-color: var(--xamnhat);
     padding: 3.5em 1em;
     display: flexbox;
     justify-content: center;
@@ -212,8 +231,8 @@ input[type=text]:focus{
 
 .help-footer a{
     text-decoration: none;
-    color: #2ecc71;
-    background-color: #fff;
+    color: #fff;
+    background-color: var(--xanhmint);
     padding: .7em;
     margin-top: 2%;
     font-weight: bold;
@@ -222,9 +241,9 @@ input[type=text]:focus{
 
 .help-footer a:hover{
     text-decoration: none;
-    color: #fff;
-    background-color: #2ecc71;
-    border-style: solid;
+    color: var(--xanhmint);
+    background-color: #fff;
+    border-style: solid ;
 }
 
 

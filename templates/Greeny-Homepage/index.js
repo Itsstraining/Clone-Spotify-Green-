@@ -7,6 +7,5 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-65px";
-    document.getElementById("menu").style.top = "0";
   }
 }
