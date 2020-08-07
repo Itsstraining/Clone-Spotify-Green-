@@ -25,7 +25,6 @@ body {
     font-weight: 700;
     width: 90rem;
     padding: initial;
-    background-color: black !important;
 }
 
 .bg-dark img {
@@ -38,13 +37,13 @@ body {
 }
 
 .navbar-light .navbar-brand {
-    color: white !important;
+    color: white ;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white !important;
     padding: 1rem;
-    /* color: rgba(0,0,0,.5); */
+
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -55,7 +54,6 @@ body {
     color: white !important;
     padding: 1rem;
     margin: 0;
-    /* color: rgba(0,0,0,.5); */
 }
 
 .format {
