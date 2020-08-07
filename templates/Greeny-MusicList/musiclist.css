@@ -115,7 +115,7 @@ h3 {
 /*Footer*/
 
 #footer {
-    height: 150px;
+    height: 100px;
     color: whitesmoke;
     background-color: black;
     opacity: 0.8;
@@ -164,6 +164,7 @@ h3 {
 }
 
 #footer .footer-container .col-lg-2 .footer-logo {
+    margin-right: 50px;
     position: absolute;
     top: -20px;
     right: 0px;
@@ -172,6 +173,7 @@ h3 {
 #footer .footer-container .col-lg-4 .footer-icon {
     position: absolute;
     top: -12px;
+    left: 10px;
 }
 
 #footer .footer-container .col-lg-4 .footer-icon i {
