@@ -28,11 +28,19 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    padding: 1rem;
     /* color: rgba(0,0,0,.5); */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgb(10, 213, 82);
+}
+
+.navbar-light .navbar-nav .nav-link1 {
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    /* color: rgba(0,0,0,.5); */
 }
 
 .format {
@@ -159,7 +167,7 @@ h3 {
 /*Footer*/
 
 #footer {
-    height: 100px;
+    /* height: 100px; */
     color: whitesmoke;
     background-color: black;
     opacity: 0.8;
@@ -215,7 +223,7 @@ h3 {
 }
 
 #footer .footer-container .col-lg-4 .footer-icon {
-    position: absolute;
+    /* position: absolute; */
     top: -12px;
     left: 0px;
 }
