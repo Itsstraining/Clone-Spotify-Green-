@@ -128,27 +128,30 @@ h1{
 .home-body-content{
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
+
+/* .content-1a{
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    
+}  */
 
 .home-body-1{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.content-1a{
-    margin: 0 auto;
-    /* padding: 0.5em 1em; */
-    box-sizing: border-box;
-
+.content-1b{
+    width: 55%;
 }
 
 
-.home-body-2{
-    background-color: var(--xanhmint);
-}
 
 .content-2a{
     margin: 0 auto;
-    padding: 0.5em 1em;
 }
 
 
