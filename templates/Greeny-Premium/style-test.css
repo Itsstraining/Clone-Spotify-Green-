@@ -1,5 +1,5 @@
 :root {
-    --xamnhat: rgb(0, 0, 0, 0.7);
+    --xamnhat: rgb(245, 245, 245);
     --xanhmint: rgb(0, 177, 79);
     --cam: rgb(249, 177, 68);
 }
@@ -14,7 +14,7 @@ html {
 
 body {
     margin: 0;
-    height: 1146px;
+    background-color: rgb(245, 245, 245);
 }
 
 .premium-header span {
@@ -66,9 +66,9 @@ p {
     text-align: center;
 }
 
-ul {
+.reason-list {
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -78,34 +78,39 @@ li>h6 {
     height: 135px;
 }
 
-li>p {
+.reason-list li>p {
     text-align: justify;
 }
 
-ul li {
-    display: inline-block;
-    padding: 20px;
-    width: 25%;
+.reason-list li {
+    /* display: inline-block; */
+    /* padding: 20px; */
+    width: 22%;
+    list-style-type: none;
 }
 
 li>img {
     width: 100%;
 }
 
+.paging {
+    width: 90rem;
+}
+
 
 /* BUTTON */
 
-.btn {
+.btnn {
     border: 0;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
-.btn:hover {
+.btnn:hover {
     opacity: 0.9;
     box-shadow: 1.5px 1.5px rgb(0, 0, 0, 0.5)
 }
@@ -116,22 +121,11 @@ li>img {
     font-size: 2.3rem;
     font-weight: 700;
     text-align: center;
-    padding: 6 px;
-}
-
-.page-container {
-    width: 90rem;
-    height: 100vh;
-    /* background-color: var(--xanhmint); */
-    justify-content: space-between;
+    padding: 6px;
 }
 
 .premium-body {
     width: 90rem;
-}
-
-.page {
-    background-color: rgb(245, 245, 245);
 }
 
 .premium-header div {
@@ -144,7 +138,6 @@ li>img {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    /* height: 35em; */
     padding: 3rem;
 }
 
@@ -231,15 +224,19 @@ li>img {
 }
 
 .premium-footer {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-.banner {
-    background-color: var(--xanhmint);
-    /* width: 100vw; */
-    height: 679px;
+.contain {
     justify-content: center;
     display: flex;
+    padding-top: 50px;
+    background-color: var(--xanhmint);
+}
+
+.body-container {
+    background-color: var(--xamnhat);
+    color: black;
 }
 
 .end {
@@ -281,6 +278,7 @@ li>img {
 .icon-pc>img {
     position: relative;
     top: 170px;
+    left: 225px;
 }
 
 .download-icon-app {
@@ -298,10 +296,13 @@ li>img {
     justify-content: center;
 }
 
-.list-device ul li {
-    font-size: 1.2em;
+.list-device li {
+    font-size: 1.1em;
+    font-weight: 500;
     padding: 0;
     text-decoration: underline;
-    border-right: 1px solid black;
+    border-right: 2px solid black;
     text-align: center;
+    display: inline-block;
+    width: 12%;
 }
