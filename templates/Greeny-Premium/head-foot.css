@@ -1,0 +1,137 @@
+.bg-dark {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90rem;
+    padding: initial;
+    background-color: black !important;
+}
+
+.bg-dark img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 1rem;
+    /* color: rgba(0,0,0,.5); */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(10, 213, 82);
+}
+
+.navbar-light .navbar-nav .nav-link1 {
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    /* color: rgba(0,0,0,.5); */
+}
+
+.navbar-expand-lg .navbar-light .bg-dark {
+    width: 1354px;
+    padding: 0;
+}
+
+.format {
+    opacity: 0.7;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#homepage {
+    background-color: black;
+    z-index: 100;
+    top: 0;
+}
+
+#footer {
+    /* height: 100px; */
+    color: whitesmoke;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding-top: 50px;
+}
+
+#footer .row li {
+    list-style-type: none;
+}
+
+.footer-container {
+    width: 50rem;
+}
+
+#footer .footer-container .col-lg-2 i {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+#footer .footer-container .col-lg-2 a {
+    color: white;
+}
+
+#footer .footer-container .col-lg-2 a:hover {
+    text-decoration: none;
+    color: rgb(10, 213, 82)
+}
+
+#footer .footer-container .col-lg-4 {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#footer .footer-container .col-lg-4 i:hover {
+    font-size: 40px;
+    transition: all 0.8s;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo {
+    margin-right: 50px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon {
+    /* position: absolute; */
+    top: -12px;
+    left: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon i {
+    margin-right: 10px;
+}
+
+.col-lg-2 ul {
+    display: block;
+}
+
+.col-lg-2 ul>li {
+    display: block;
+    width: initial;
+    height: initial;
+    padding: initial;
+}
