@@ -5,23 +5,18 @@
     --cam: rgb(249, 177, 68);
 }
 
-body {
-    background-repeat: no-repeat;
-    font-weight: 300;
-    margin: 0 auto;
-    width: 100%;
-    font-weight: 1em;
-    font-size: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-
-
 nav{
     position: fixed;
     z-index: 3;
     opacity: 0.9;
 }
 
+body {
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
 
 .bg-dark {
     display: flex;
@@ -47,10 +42,19 @@ nav{
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    padding: 1rem;
+    /* color: rgba(0,0,0,.5); */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgb(10, 213, 82);
+}
+
+.navbar-light .navbar-nav .nav-link1 {
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    /* color: rgba(0,0,0,.5); */
 }
 
 .format {
@@ -58,7 +62,7 @@ nav{
     width: 100vw;
     position: fixed;
     z-index: 100;
-    top:-65px;
+    top: -65px;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -120,32 +124,108 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .home-body-content{
     display: flex;
     justify-content: center;
-}
-
-.home-body-1{
-    position: relative;
+    flex-direction: row;
 }
 
 .content-1a{
     margin: 0 auto;
-    /* padding: 0.5em 1em; */
+    padding: 1em 1em;
     box-sizing: border-box;
-
+    color: #fff;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 13em; 
 }
 
-
-.home-body-2{
-    background-color: var(--xanhmint);
+.content-1a p{
+    font-size: 1.2em;
 }
+.content-1a a{
+    background-color: #fff;
+    color: var(--xanhmint);
+    border-radius: 1.5em;
+    padding: 1em;
+} 
+
+.home-body-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5em;
+}
+
 
 .content-2a{
     margin: 0 auto;
-    padding: 0.5em 1em;
+    height: 100%;
+    text-align: center; 
+}
+
+
+.content-2a h2{
+    font-size: 2em;
+    color: var(--mauchu);
+    margin: .5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.content-2b{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0.5em;
+    color: var(--mauchu);
+}
+
+.icon{
+    width: 50%;
+    text-align: center;
+}
+
+.icon p{
+    margin: 0.55em;
+    font-size: 1.2em;
+}
+
+.content-3a{
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.home-body-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 3em 1.5em 2em;
+}
+
+.content-3a{
+    width: 50%;
+}
+
+.content-3a p{
+    font-size: 1.2em;
+}
+
+.content-3a h3{
+    font-size: 2.5em;
+}
+
+.content-3b{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -154,8 +234,10 @@ h1{
 /*------------------Footer-------------------------*/
 
 #footer {
+    /* height: 100px; */
     color: whitesmoke;
-    background-color: #343a40;
+    background-color: black;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -169,11 +251,49 @@ h1{
     width: 50rem;
 }
 
-#footer .footer-container .col-lg-6 i {
+#footer .footer-container .col-lg-2 i {
     margin-right: 15px;
     font-size: 30px;
 }
 
-#footer .footer-container .col-lg-6 i:hover {
-    font-size: 35px;
+#footer .footer-container .col-lg-2 a {
+    color: white;
+}
+
+#footer .footer-container .col-lg-2 a:hover {
+    text-decoration: none;
+    color: rgb(10, 213, 82)
+}
+
+#footer .footer-container .col-lg-4 {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#footer .footer-container .col-lg-4 i:hover {
+    font-size: 40px;
+    transition: all 0.8s;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo {
+    margin-right: 50px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon {
+    /* position: absolute; */
+    top: -12px;
+    left: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon i {
+    margin-right: 10px;
 }
