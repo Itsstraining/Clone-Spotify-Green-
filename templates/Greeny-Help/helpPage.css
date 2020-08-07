@@ -7,12 +7,6 @@
 }
 
 
-nav{
-    position: fixed;
-    z-index: 3;
-    opacity: 0.9;
-}
-
 body {
     background-repeat: no-repeat;
     width: 100%;
@@ -25,6 +19,7 @@ body {
     font-weight: 700;
     width: 90rem;
     padding: initial;
+    background-color: black !important;
 }
 
 .bg-dark img {
@@ -37,13 +32,13 @@ body {
 }
 
 .navbar-light .navbar-brand {
-    color: white ;
+    color: white !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white !important;
     padding: 1rem;
-
+    /* color: rgba(0,0,0,.5); */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -51,28 +46,29 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link1 {
-    color: white !important;
+    color: white;
     padding: 1rem;
     margin: 0;
+    /* color: rgba(0,0,0,.5); */
 }
 
 .format {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     width: 100vw;
-    position: fixed;
+    /* position: fixed; */
     z-index: 100;
-    top: 0px;
+    top: 0;
     display: flex;
     justify-content: center;
-    background-color: black !important;
+    background-color: transparent;
 }
 
 #homepage {
-    background-color: black !important;
+    background-color: black;
     z-index: 100;
     top: 0;
+    opacity: 0.8;
 }
-
 
 /*---------------- Help page ---------------*/
 
@@ -180,7 +176,7 @@ input[type=text]:focus{
 }
 
 .suggest-box h5{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .box-1{
@@ -251,6 +247,7 @@ input[type=text]:focus{
     margin-top: 2%;
     font-weight: bold;
     border-radius: 1.5em;
+    font-size: 1.5em;
 }
 
 .help-footer a:hover{
@@ -270,7 +267,6 @@ input[type=text]:focus{
     opacity: 0.8;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
     padding-top: 50px;
 }
 
