@@ -1,7 +1,7 @@
 body {
     background-repeat: no-repeat;
     width: 100%;
-    margin: 0 auto;     
+    margin: 0 auto;
 }
 
 .bg-dark {
@@ -10,6 +10,12 @@ body {
     font-weight: 700;
     width: 90rem;
     padding: initial;
+    background-color: black !important;
+}
+
+.bg-dark img {
+    width: 50px;
+    height: 50px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -21,8 +27,12 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white ;
+    color: white;
     /* color: rgba(0,0,0,.5); */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(10, 213, 82);
 }
 
 .format {
@@ -33,11 +43,11 @@ body {
     top: 0;
     display: flex;
     justify-content: center;
-    background-color: #343a40;
+    background-color: black;
 }
 
 #homepage {
-    background-color: #343a40;
+    background-color: black;
     z-index: 100;
     top: 0;
 }
@@ -51,6 +61,7 @@ img {
 }
 
 h3 {
+    margin: 30px 0px;
     font-family: fantasy;
 }
 
@@ -59,6 +70,7 @@ h3 {
 
 .container .music-list .music-img img {
     height: 500px;
+    box-shadow: 15px -1px 19px 0px rgb(0, 0, 0, 0.9);
 }
 
 .container .music-list .music-detail {
@@ -118,16 +130,42 @@ h3 {
     margin-bottom: 10px;
     border-radius: 15px;
     height: 400px;
+    position: relative;
+}
+
+.container .col-md-4:hover .album-content {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(100px);
+}
+
+.container .col-md-4:hover .album-content a {
+    color: black;
+}
+
+.container .col-md-4:hover img {
+    opacity: 0.7;
+}
+
+.container .col-md-4 .album-content {
+    opacity: 0;
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 20px;
 }
 
 
 /*Footer*/
 
 #footer {
+    height: 150px;
     color: whitesmoke;
-    background-color: #343a40;
+    background-color: black;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
     padding-top: 50px;
 }
 
@@ -139,11 +177,47 @@ h3 {
     width: 50rem;
 }
 
-#footer .footer-container .col-lg-6 i {
+#footer .footer-container .col-lg-2 i {
     margin-right: 15px;
     font-size: 30px;
 }
 
-#footer .footer-container .col-lg-6 i:hover {
-    font-size: 35px;
+#footer .footer-container .col-lg-2 a {
+    color: white;
+}
+
+#footer .footer-container .col-lg-2 a:hover {
+    text-decoration: none;
+    color: rgb(10, 213, 82)
+}
+
+#footer .footer-container .col-lg-4 {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#footer .footer-container .col-lg-4 i:hover {
+    font-size: 40px;
+    transition: all 0.8s;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .footer-container .col-lg-2 .footer-logo {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon {
+    position: absolute;
+    top: -12px;
+}
+
+#footer .footer-container .col-lg-4 .footer-icon i {
+    margin-right: 10px;
 }
