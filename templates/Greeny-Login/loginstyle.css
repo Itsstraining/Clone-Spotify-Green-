@@ -1,15 +1,16 @@
 body {
-        font-weight: 400;
-        font-size: 16px;
-        background-color: white;
-        line-height: 1.5;
-        font-family: 'Work Sans', sans-serif;
-        text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: white;
+    line-height: 1.5;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
 }
 
 
 /* .login */
-.signUp h2{
+
+.signUp h2 {
     background-color: white;
     color: #222326;
     min-width: 320px;
@@ -18,7 +19,7 @@ body {
 }
 
 .signUpHeader {
-    background-color:white;
+    background-color: white;
     padding: 1em 0 1em 0;
 }
 
@@ -26,7 +27,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     /* padding: 0 15px 15px 15px; */
-
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -36,35 +36,37 @@ body {
     max-width: 26.875em;
 }
 
-.logo{
+.logo {
     background: url(/images/download.svg) transparent no-repeat center center;
     background-size: contain;
-    display:block;
+    display: block;
     margin: auto;
     width: 197px
 }
 
+
 /* .body */
+
 .signUpBody {
     background-color: white;
-    border-top: 1px solid #dfe0e6; /*vien*/
-    border-bottom: 1px solid #dfe0e6;;
+    border-top: 1px solid #dfe0e6;
+    /*vien*/
+    border-bottom: 1px solid #dfe0e6;
+    ;
 }
 
-a{
+a {
     color: #1db954;
 }
 
-
-.login{
+.login {
     margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
     max-width: 320px;
 }
 
-
-.logindangnhap{
+.logindangnhap {
     font-size: 30px;
     line-height: 1;
     color: #fff;
@@ -73,7 +75,7 @@ a{
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-property: background-color, border-color, color, box-shadow, filter;
     transition-duration: .3s;
     border-width: 0;
     letter-spacing: 2px;
@@ -82,9 +84,7 @@ a{
     white-space: normal;
 }
 
-
-
-.login :hover{
+.login :hover {
     opacity: 0.8;
 }
 
@@ -93,8 +93,7 @@ strong {
     text-align: center;
 }
 
-.checkbox{
-    
+.checkbox {
     padding-left: 0.5em;
     font-weight: 400;
 }
@@ -107,7 +106,7 @@ strong {
     background-image: none;
     border: 1px solid #d9dadc;
     border-radius: 0;
-    margin: 5px ;
+    margin: 5px;
 }
 
 .content {
@@ -151,7 +150,9 @@ strong {
     content: '';
 }
 
+
 /* button  */
+
 .button {
     margin-bottom: 14px;
     margin-left: auto;
@@ -159,7 +160,7 @@ strong {
     max-width: 320px;
 }
 
-.button:hover{
+.button:hover {
     opacity: 0.8;
     box-shadow: 3px 3px #999;
 }
@@ -171,7 +172,7 @@ strong {
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px 48px;
-    width: 100%;
+    /* width: 100%; */
     display: block;
     border: 1px solid transparent;
     white-space: normal;
@@ -188,7 +189,7 @@ strong {
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px 48px;
-    width: 100%;
+    /* width: 100%; */
     display: block;
     border: 1px solid transparent;
     white-space: normal;
@@ -205,7 +206,7 @@ strong {
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px 48px;
-    width: 100%;
+    /* width: 100%; */
     display: block;
     border: 1px solid transparent;
     white-space: normal;
@@ -214,4 +215,3 @@ strong {
     border: none;
     outline: none;
 }
-
