@@ -110,7 +110,7 @@
         max-width: 100%;
         display: flex;
         justify-content: center;
-        margin: 6em 17em 3em;
+        /* margin: 6em 16em 3em; */
     }
 
     .help{

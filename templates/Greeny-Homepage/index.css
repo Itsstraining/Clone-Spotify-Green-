@@ -1,8 +1,17 @@
+:root{
+    --mauchu: rgb(0, 0, 0, 0.7);
+    --xamnhat:rgba(241, 240, 240, 0.925);
+    --xanhmint: rgb(0, 177, 79);
+    --xanhnhat:#2ecc71;
+    --cam: rgb(249, 177, 68);
+}
+
 body {
     font-weight: 300;
     margin: 0;
     width: 100%;
     font-weight: 1em;
+    font-size: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 
@@ -59,32 +68,36 @@ nav{
     color: #fff;
 }
 
-/*--------------- H    O   M   E       b   o   d   y --------------*/
+/*--------------- H    O   M   E       p   a   g   e --------------*/
 
+.home-header{
+    /* height: auto; */
+    box-sizing: content-box ;
+    height: 100%;
+}
 
 .table{
-    position: relative;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     text-align: center;
-    display: flexbox;
+    display: flex;
     justify-content: center;
-    top: 3.5em;
-    }
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+}
 
 
 .home-header img{
     background-size: fixed;
-    position: absolute;
     z-index: -100;
     opacity: 0.5;
     margin: 0 auto;
     width: 100%;
-    top: 0;
 }
 
 h1{
-    color: #343a40;
-    font-size: 1em;
+    color: var(--mauchu);
+    font-size: 0.7em;
     letter-spacing: .18em;
     line-height: 1em;
     padding: .5em;
@@ -92,37 +105,38 @@ h1{
 }
 
 .table p{
-    color: #343a40;
-    font-size: .8em;
+    color: var(--mauchu);
+    font-size: .7em;
     letter-spacing: .18em;
     line-height: 1em;
     padding: 0.5em;
     margin: 0;
 }
 
-.scroll-icon{
-    color: #343a40;
-    font-size: 1em;
-    padding: 1em;
-
+/* ---------------home body ------------------------- */
+.home-body{
+    display: flex;
+    justify-content: center;
 }
 
 .home-body-1{
-    background-color: #fff;
+    position: relative;
 }
 
-.content-1{
+.content-1a{
     margin: 0 auto;
-    width: 100rem;
+    /* padding: 0.5em 1em; */
+    box-sizing: border-box;
 }
+
 
 .home-body-2{
     background-color: #A5FAC5;
 }
 
-.content-2{
+.content-2a{
     margin: 0 auto;
-    width: 100rem;
+    padding: 0.5em 1em;
 }
 
 
