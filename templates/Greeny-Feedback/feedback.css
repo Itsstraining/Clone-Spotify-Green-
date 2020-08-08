@@ -92,6 +92,7 @@ body{
 
 .icon:hover{
     color: var(--cam);
+    cursor: pointer;
 }
 
 .name input[type="text"]{
@@ -108,6 +109,10 @@ body{
     border-right: none;
     border-left: none;
     width: 50%;
+}
+
+#message{
+    padding-left: 2em !important;
 }
 
 #message:focus{
