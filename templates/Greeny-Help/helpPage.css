@@ -67,7 +67,8 @@ body {
     background-color: black;
     z-index: 100;
     top: 0;
-    opacity: 0.8;
+    opacity: 0.7;
+    position: fixed;
 }
 
 /*---------------- Help page ---------------*/
@@ -119,6 +120,7 @@ input[type=text]:focus{
 .help-page{
     display: flex;
     justify-content: center;
+    background-color: var(--xanhmint);
 }
 
 .help-body{

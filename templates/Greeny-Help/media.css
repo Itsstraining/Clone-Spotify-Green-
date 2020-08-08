@@ -137,5 +137,8 @@
     .suggest-box{
         width: 30%;
         float: left;
+        flex-direction: column;
+    justify-content: space-around;
+    display: flex;
     }
-}
+
