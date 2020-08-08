@@ -74,126 +74,232 @@ body {
     top: 0;
 }
 
-/*--------------- H    O   M   E       p   a   g   e --------------*/
 
-.home-header{
-    /* height: auto; */
-    box-sizing: border-box ;
+/* ---------------Nháp----------------------------- */
+
+body, html, div.main-pic, div.bgimg-2, div.bgimg-3{
     height: 100%;
-}
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
 
-.table{
-    font-family: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-}
-
-
-.home-header img{
-    background-size: fixed;
+  
+  .main-pic, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
     z-index: -100;
-    opacity: 0.5;
-    margin: 0 auto;
-    width: 100%;
-    opacity: 0.5;
-}
-
-h1{
-    color: var(--mauchu);
-    font-size: 0.7em;
-    letter-spacing: .18em;
-    line-height: 1em;
-    padding: .5em;
-    margin: 0;
-}
-
-.table p{
-    color: var(--mauchu);
-    font-size: .7em;
-    letter-spacing: .18em;
-    line-height: 1em;
-    padding: 0.5em;
-    margin: 0;
-}
-
-/* ---------------home body ------------------------- */
-.home-body{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main-pic {
+    background-image: url("../img/background.jpg");
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("../img/adam.jpg");
+    display: flex;
+    justify-content: center;
+    /* min-height: 40em; */
+  }
+
+  /* .overlay-back{
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+  } */
+  
+  .bgimg-3 {
+    background-image: url("../img/taylor.jpg");
+    display: flex;
+    justify-content: center;
+    /* min-height: 40em; */
+  }
+
+  .content{
+    margin: 1.5em;
+  }
+
+  .caption h1{
+      font-size: 5em;
+      color: #000;
+      position: relative;
+  }
+  
+  .caption{
+    /* position: absolute; */
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  .caption p.border-0 {
+    color: #000;
+    font-size: 3em;
+    letter-spacing: 10px;
+  }
+  
+
+.border2{
+  display: none;
+  z-index: -99;
+  background-color:transparent;
+  font-size: 6em;
+  color: rgb(0, 0, 0, 0.7); 
+  padding: .5em; 
+  border-style: none;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  letter-spacing: 10px;
+  opacity: 0.5;
 }
 
-.home-body-content{
+
+/* .caption1 {
+    
+    background-color: transparent;
+    opacity: 0.5;
+    height: fit-content;
+    height: -moz-fit-content;
+    color: white;
+    font-size: 2em;
+    mix-blend-mode: difference;
+    z-index: 99;
+  } */
+  
+  .content h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 2.5em "Lato", sans-serif;
+    color: var(--mauchu);
+    text-align: center;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  /* @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  } */
+
+
+  .content-1{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-1 a{
+    background-color: var(--xanhmint);
+    color: #fff;
+    padding: .8em;
+    border-radius: 1em;
+    margin-top: 1em;
+  }
+
+  .content-1 a:hover{
+    color: var(--xanhmint);
+    text-decoration: none;
+    background-color: #fff;
+    border-style: solid;
+    border-color:  var(--xanhmint);
+    padding: .8em;
+    margin-top: 1em;
+    border-style: solid;
+  }
+
+  .content-1 p{
+    font-size: 1.2em;
+  }
+
+  /* ---app------- */
+
+  .home-body-content{
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
 .content-1a{
-    margin: 0 auto;
-    padding: 1em 1em;
-    box-sizing: border-box;
-    color: #fff;
-    display: flexbox;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 13em; 
+  margin: 0 auto;
+  padding: 1em 1em;
+  box-sizing: border-box;
+  color: #fff;
+  display: flexbox;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 13em; 
 }
 
 .content-1a p{
-    font-size: 1.2em;
+  font-size: 1.5em;
 }
 .content-1a a{
-    background-color: #fff;
-    color: var(--xanhmint);
-    border-radius: 1.5em;
-    padding: 1em;
+  background-color: #fff;
+  color: var(--xanhmint);
+  border-radius: 1.5em;
+  padding: 1em;
 } 
 
+.content-1a a:hover{
+  background-color: var(--xanhmint);
+  color: #fff;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color:  #fff;
+  padding: 1em;
+  text-decoration: none;
+} 
+
+.content-1a h3{
+  font-size: 3em;
+  
+}
+
 .home-body-1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: .5em;
-}
-
-
-.content-2a{
-    margin: 0 auto;
-    height: 100%;
-    text-align: center; 
-}
-
-
-.content-2a h2{
-    font-size: 2em;
-    color: var(--mauchu);
-    margin: .5em;
-    text-transform: uppercase;
-    font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: .5em;
 }
 
 .content-2b{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 0.5em;
-    color: var(--mauchu);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5em;
+  color: var(--mauchu);
 }
 
 .icon{
-    width: 50%;
-    text-align: center;
+  margin: 3%;
+  width: 25%;
+  text-align: center;
+  border-style: solid;
+  padding: 1em;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
 }
 
 .icon p{
-    margin: 0.55em;
-    font-size: 1.2em;
+  margin: 0.55em;
+  font-size: 1.2em;
 }
 
 .content-3a{
@@ -214,11 +320,13 @@ h1{
 }
 
 .content-3a p{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: var(--mauchu);
 }
 
 .content-3a h3{
-    font-size: 2.5em;
+    font-size: 3em;
+    color: var(--mauchu);
 }
 
 .content-3b{
@@ -227,8 +335,6 @@ h1{
     justify-content: center;
     text-align: center;
 }
-
-
 
 
 /*------------------Footer-------------------------*/
